@@ -99,7 +99,7 @@ def fresh_list():
 			date = date.text.strip('\n')
 			result[num] = [title,author,date]
 			print('%2d %-20s %-10s %-5s' %(num, title, author, date))
-		# return soup, url
+		# return soup, url, apple
 
 def do_page():
 	res = rs.get(urls, headers=headers, verify=False, cookies=cookies, params=params)
